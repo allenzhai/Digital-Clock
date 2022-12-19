@@ -1,0 +1,16 @@
+body {
+    background-color: black;
+}
+
+.date-time-container {
+    min-width: 375px;
+    min-height: 150px;
+    color: antiquewhite;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
