@@ -61,7 +61,7 @@ function displayDateAndTime() {
     const currentDay = new Date();
 
     const month = months[currentDay.getMonth()];
-    const day = addLeadingZero(currentDay.getDay());
+    const daydate = addLeadingZero(currentDay.getDate());
     const weekDay = days[currentDay.getDay()];
     const year = currentDay.getFullYear();
 
@@ -72,7 +72,7 @@ function displayDateAndTime() {
     const miliseconds = addLeadingZeros(currentDay.getMilliseconds());
     const meridiem = militaryHours < 12 ? "AM" : "PM";
 
-    dateDisplay.textContent = `${weekDay}, ${month} ${day}, ${year}`;
+    dateDisplay.textContent = `${weekDay}, ${month} ${daydate}, ${year}`;
     timeDisplay.textContent = `${standardHours}:${minute}:${second}:${miliseconds} ${meridiem}`;
 }
 
